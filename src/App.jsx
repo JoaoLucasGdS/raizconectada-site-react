@@ -9,7 +9,7 @@ import FormsPage from "./pages/FormsPage";
 const router = createBrowserRouter([
 
   {
-    path: "/home",
+    path: "/",
     element: <HomePage />,
   },
   {
