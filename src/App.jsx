@@ -1,15 +1,21 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./App.css";
 
 import HomePage from "./pages/HomePage";
+import GpsPage from "./pages/GpsPage";
 import ReviewsPage from "./pages/ReviewsPage";
 import ShoppingCartPage from "./pages/ShoppingCartPage";
-import GpsPage from "./pages/GpsPage";
 import FormsPage from "./pages/FormsPage";
 
 const router = createBrowserRouter([
+
   {
-    path: "/",
+    path: "/home",
     element: <HomePage />,
+  },
+  {
+    path: "/gps",
+    element: <GpsPage />,
   },
   {
     path: "/reviews",
@@ -20,17 +26,16 @@ const router = createBrowserRouter([
     element: <ShoppingCartPage />,
   },
   {
-    path: "/gps",
-    element: <GpsPage />,
-  },
-  {
-    path: "/forms",
+    path: "/form",
     element: <FormsPage />,
-  },
-]);
+  }
+  
+])
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <RouterProvider router={router} />
+  );
 }
 
 export default App;
