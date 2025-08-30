@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import "./RaizHeader.css";
 import Logo from "../assets/logo.png";
 
-function RaizHeader({ paginaAtual }) {
+function RaizHeader() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark custom-navbar">
