@@ -6,7 +6,7 @@ function RaizHeader({ paginaAtual }) {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark custom-navbar">
-        <NavLink to="/home" className="navbar-brand">
+        <NavLink to="/" className="navbar-brand">
           <img src={Logo} alt="Logo raiz conectada" height="100" />
         </NavLink>
 
