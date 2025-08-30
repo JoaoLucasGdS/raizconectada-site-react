@@ -2,10 +2,13 @@ import { NavLink } from "react-router-dom";
 import "./RaizHeader.css";
 import Logo from "../assets/logo.png";
 
-function RaizHeader() {
+function RaizHeader({ transparent = false }) {
+
+  const rootClass = `navbar navbar-expand-lg navbar-dark custom-navbar ${transparent ? "custom-navbar--transparent" : ""}`;
+
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark custom-navbar">
+      <nav className={rootClass}>
         <NavLink to="/" className="navbar-brand">
           <img src={Logo} alt="Logo raiz conectada" height="100" />
         </NavLink>

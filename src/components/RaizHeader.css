@@ -2,6 +2,10 @@
     background-color: #0f3219;
 }
 
+.custom-navbar--transparent {
+    background-color: transparent;
+}
+
 .custom-nav-link:hover {
     color: aliceblue !important;
 }
