@@ -14,11 +14,6 @@ function RaizHeader({ transparent = false }) {
         </NavLink>
 
         <ul className="navbar-nav ms-auto">
-          <li className="nav-item">
-            <NavLink to="/profile" className="nav-link text-primary custom-nav-link">
-              <i className="bi bi-person-circle fs-3" />
-            </NavLink>
-          </li>
 
           <li className="nav-item">
             <NavLink
@@ -55,7 +50,19 @@ function RaizHeader({ transparent = false }) {
               <i className="bi bi-chat-dots fs-3" /> Fale Conosco
             </NavLink>
           </li>
+
         </ul>
+
+        <ul className="navbar-nav">
+
+          <li className="nav-item">
+            <NavLink to="/profile" className="nav-link text-primary custom-nav-link">
+              <i className="bi bi-person-circle fs-1" />
+            </NavLink>
+          </li>
+
+        </ul>
+
       </nav>
     </div>
   );
