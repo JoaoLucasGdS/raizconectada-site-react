@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import "./RaizHeader.css";
+import "./css/RaizHeader.css";
 import Logo from "../assets/logo.png";
 
 function RaizHeader({ transparent = false }) {

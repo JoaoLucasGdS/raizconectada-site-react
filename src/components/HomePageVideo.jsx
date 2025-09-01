@@ -1,4 +1,4 @@
-import './HomePageVideo.css';
+import './css/HomePageVideo.css';
 import homePageVideoFile from '../assets/HomePageVideo.mp4'
 import { useEffect } from "react";
 
