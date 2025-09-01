@@ -6,30 +6,37 @@ import ReviewsPage from "./pages/ReviewsPage";
 import ShoppingCartPage from "./pages/ShoppingCartPage";
 import FormsPage from "./pages/FormsPage";
 
-const router = createBrowserRouter([
+import RootLayout from "./components/RootLayout";
 
-  {
+const router = createBrowserRouter([{
+
     path: "/",
-    element: <HomePage />,
-  },
-  {
-    path: "/gps",
-    element: <GpsPage />,
-  },
-  {
-    path: "/reviews",
-    element: <ReviewsPage />,
-  },
-  {
-    path: "/cart",
-    element: <ShoppingCartPage />,
-  },
-  {
-    path: "/form",
-    element: <FormsPage />,
+    element: <RootLayout />,
+    
+    children: [
+      {
+        index: true,
+        element: <HomePage />,
+      },
+      {
+        path: "gps",
+        element: <GpsPage />,
+      },
+      {
+        path: "reviews",
+        element: <ReviewsPage />,
+      },
+      {
+        path: "cart",
+        element: <ShoppingCartPage />,
+      },
+      {
+        path: "form",
+        element: <FormsPage />,
+      }
+    ]
   }
-  
-])
+]);
 
 function App() {
   return (
