@@ -2,9 +2,10 @@
     background-color: #0f3219;
     position: relative;
     z-index: 1;
+    transition: background-color 250ms ease-out;
 }
 
-.custom-navbar--transparent {
+.custom-navbar--transparent:not(:hover) {
     background-color: transparent;
 }
 
@@ -17,3 +18,4 @@
     height: 100vh;      
     margin: 0 auto;     
 }
+
