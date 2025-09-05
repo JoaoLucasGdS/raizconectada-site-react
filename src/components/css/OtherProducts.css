@@ -1,0 +1,125 @@
+/* In your ./css/OtherProducts.css file */
+
+.other-products-wrapper {
+  /* ... your existing wrapper styles ... */
+  max-width: 100%;
+}
+
+.other-products-container {
+  display: flex;
+  gap: var(--gap, 16px);
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.other-products-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+/* This is the container for each individual product */
+.other-product-item {
+  /* REMOVED these fixed sizes */
+  /* flex: 0 0 250px; */
+  /* width: 250px; */
+  /* height: 250px; */
+
+  /* ADDED this to maintain a square shape dynamically */
+  aspect-ratio: 1 / 1;
+
+  /* The rest of the styles are the same */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  scroll-snap-align: start;
+  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+  outline: 2px solid transparent;
+}
+
+
+/* This is the <img> tag itself */
+.other-product-image {
+  /* This is the key part for intelligent sizing */
+  max-width: 100%;   /* Ensures image never gets wider than the 250px container */
+  max-height: 100%; /* Ensures image never gets taller than the 250px container */
+  width: auto;      /* Lets the browser calculate width based on aspect ratio */
+  height: auto;     /* Lets the browser calculate height based on aspect ratio */
+  object-fit: contain; /* Guarantees the entire image is visible without distortion */
+}
+
+/* In your ./css/OtherProducts.css file */
+
+.other-product-item {
+  /* ...all your existing styles... */
+  flex: 0 0 250px;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* ADD THIS: for smooth animation */
+  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+  outline: 2px solid transparent; /* Prepare for the focus outline */
+}
+
+/* Style for when the mouse is over the item */
+.other-product-item:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Style for when the item is clicked or selected with the keyboard */
+.other-product-item:focus,
+.other-product-item:focus-within {
+  transform: scale(1.05);
+  outline: 2px solid #007bff; /* A clear highlight */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+/* Add these styles to your ./css/OtherProducts.css file */
+
+.other-products-wrapper {
+  position: relative; /* This is crucial for positioning the buttons */
+  padding: 0 40px; /* Adds space on the sides so buttons don't overlap content */
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: #333;
+  font-size: 24px; /* Affects SVG size */
+}
+
+.carousel-btn:hover {
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+}
+
+.carousel-btn.prev {
+  left: 0px;
+}
+.carousel-btn.prev svg {
+  transform: rotate(180deg);
+}
+
+.carousel-btn.next {
+  right: 0px;
+}

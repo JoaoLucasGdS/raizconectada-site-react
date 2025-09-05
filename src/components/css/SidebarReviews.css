@@ -1,0 +1,6 @@
+.reviews-list-container {
+
+  max-height: 590px; /*Enough pixels to show 6 profiles without a horizontal border line on the last one*/
+  overflow-y: auto;
+
+}
