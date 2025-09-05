@@ -6,6 +6,7 @@ function HomePageVideo(){
     return (
         <div className='DivHomePageVideo'>
             <video src={homePageVideoFile} autoPlay loop muted/>
+            <div className="overlay"></div>
         </div>
     )
 
