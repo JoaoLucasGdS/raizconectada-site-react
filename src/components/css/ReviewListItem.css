@@ -1,0 +1,13 @@
+.review-list-item {
+    background-color: transparent;
+    border: none;
+    transition: background-color 0.2s ease;
+}
+
+.review-list-item:hover {
+    background-color: #c7f5de;
+}
+
+.review-list-item.active {
+    background-color: #e9ecef; 
+}
