@@ -17,9 +17,3 @@
   object-fit: cover;
   display: block;
 }
-
-.no-scroll {
-  overflow: hidden;
-  /* ensure mobile doesn't treat body as larger than viewport */
-  height: 100vh;
-}
