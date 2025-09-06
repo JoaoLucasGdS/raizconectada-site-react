@@ -1,0 +1,80 @@
+{
+  "home": {
+    "subtitle": "あなたの栽培、私たちのつながり",
+    "title": "ルート<br/>コネクテッド",
+    "contactButton": "お問い合わせ"
+  },
+  "reviewsPage": {
+    "reviewTitle": "商品と販売者",
+    "otherProducts": "類似商品"
+  },
+  "cart": {
+    "banana": "バナナ",
+    "grape": "ぶどう",
+    "orange": "オレンジ",
+    "watermelon": "スイカ",
+    "farmerX": "農家X",
+    "farmerY": "農家Y",
+    "farmerZ": "農家Z",
+    "price": "価格",
+    "quantity": "数量",
+    "total": "合計",
+    "subtotal": "小計",
+    "delivery": "配達",
+    "buy": "購入"
+  },
+  "profileTabs": {
+    "orders": "注文履歴",
+    "products": "出品商品"
+  },
+  "orders": {
+    "orderId": "注文 #{{id}}",
+    "status": {
+      "delivered": "配達済み",
+      "canceled": "キャンセル",
+      "pending": "保留中"
+    }
+  },
+  "form": {
+    "intro": {
+      "title": "お問い合わせ",
+      "subtitle": "あなたの意見は私たちにとって大切な柱です。"
+    },
+    "labels": {
+      "nome": "氏名:",
+      "email": "メールアドレス:",
+      "mensagem": "メッセージを入力してください:"
+    },
+    "placeholders": {
+      "nome": "あなたの氏名",
+      "email": "example@example.com",
+      "mensagem": "メッセージを入力..."
+    },
+    "errors": {
+      "nomeBlank": "氏名は空白にできません。",
+      "nomeIncomplete": "氏名と名字を入力してください。",
+      "emailBlank": "メールアドレスは空白にできません。",
+      "emailInvalid": "有効なメール形式を入力してください。",
+      "mensagemBlank": "メッセージは空白にできません。",
+      "mensagemShort": "メッセージは最低{{charsLeft}}文字必要です。"
+    },
+    "submit": "送信",
+    "success": "メッセージありがとうございます、"
+  },
+  "reviews": {
+    "clickSeller": "販売者をクリック",
+    "clickSellerDetails": "サイドバーの販売者をクリックして詳細を表示してください。",
+    "verified": "認証済み"
+  },
+  "activities": {
+    "activities": "アクティビティ"
+  },
+  "header": {
+    "locate": "探す",
+    "reviews": "レビュー",
+    "cart": "カート"
+  },
+  "footer": {
+    "aboutus": "私たちについて"
+  }
+}
