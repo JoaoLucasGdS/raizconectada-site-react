@@ -13,7 +13,7 @@ const mockProducts = [
   },
     {
     id: 3,
-    name: "Peira",
+    name: "Peiras",
     price: "R$ 13,00",
     image: "src/assets/products/p6.jpg",
   },
