@@ -1,12 +1,16 @@
 import { useRef } from "react"
+import { useTranslation } from "react-i18next";
 
 import "./css/HomePage.css"
 
 import HomePageVideo from "../components/HomePageVideo";
 import RaizFooter from "../components/RaizFooter"
 import Forms from "../components/Forms";
+import LanguageSwitcher from "../components/LanguageSwitcher";
 
 function HomePage() {
+
+  const { t } = useTranslation();
 
   const formsSectionRef = useRef(null);
 
@@ -25,7 +29,7 @@ function HomePage() {
 
       <HomePageVideo />
         <div className="herotext">
-          <p className="subtitle">SEU CULTIVO, NOSSA CONEXÃO</p>
+          <p className="subtitle">{t("home.subtitle")}</p>
           <h1 className="title">RAIZ<br/> CONECTADA</h1>
         </div>
 
@@ -41,11 +45,13 @@ function HomePage() {
               <i className="bi bi-youtube fs-3" />
             </button>
 
+            <LanguageSwitcher />
+
             <button
               onClick={handleScrollToForms}
               className="scroll-to-forms-button"
             >
-              <i className="bi bi-chat-dots fs-3" /> Fale Conosco
+              <i className="bi bi-chat-dots fs-3" /> {t("home.contactButton")}
             </button>
 
           </div>
