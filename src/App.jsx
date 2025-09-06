@@ -8,6 +8,8 @@ import FormsPage from "./pages/FormsPage";
 
 import RootLayout from "./components/RootLayout";
 
+import "./index.css"
+
 const router = createBrowserRouter([{
 
     path: "/",
