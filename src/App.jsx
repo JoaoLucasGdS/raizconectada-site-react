@@ -4,7 +4,7 @@ import HomePage from "./pages/HomePage";
 import GpsPage from "./pages/GpsPage";
 import ReviewsPage from "./pages/ReviewsPage";
 import ShoppingCartPage from "./pages/ShoppingCartPage";
-import FormsPage from "./pages/FormsPage";
+import ProfilePage from "./pages/ProfilePage";
 
 import RootLayout from "./components/RootLayout";
 
@@ -33,8 +33,8 @@ const router = createBrowserRouter([{
         element: <ShoppingCartPage />,
       },
       {
-        path: "form",
-        element: <FormsPage />,
+        path: "profile",
+        element: <ProfilePage />,
       }
     ]
   }
