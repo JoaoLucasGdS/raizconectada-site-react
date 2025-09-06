@@ -20,7 +20,7 @@ function ReviewsPage() {
   return (
     <div className="container-fluid mt-4">
       
-      <p className="titleReviewsPage">{t("reviews.reviewTitle")}</p>
+      <p className="titleReviewsPage">{t("reviewsPage.reviewTitle")}</p>
 
       <div className="row">
 
@@ -33,7 +33,7 @@ function ReviewsPage() {
           {selectedReview && (
             <div className="text-center">
               <hr className="my-4" />
-              <h4>{t("reviews.otherProducts")}</h4>
+              <h4>{t("reviewsPage.otherProducts")}</h4>
               <OtherProducts 
                 products={sampleProducts} 
                 visible={4} 
