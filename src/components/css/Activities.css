@@ -1,0 +1,35 @@
+.activities-wrapper {
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden; /* Ensures children respect the border radius */
+  border: 1px solid #e9ecef;
+}
+
+.activities-main {
+  padding: 2rem;
+}
+
+.activities-header {
+  font-weight: 700;
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.recommendations-sidebar {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-left: 1px solid #e9ecef;
+}
+
+.recommendations-title {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 991.98px) {
+  .recommendations-sidebar {
+    border-left: none;
+    border-top: 1px solid #e9ecef;
+  }
+}

@@ -1,0 +1,62 @@
+.order-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.order-card:last-child {
+  border-bottom: none;
+}
+
+.order-image {
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  object-fit: cover;
+  background-color: #f8f9fa;
+}
+
+.order-details {
+  flex-grow: 1;
+}
+
+.order-id {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #343a40;
+}
+
+.order-items {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.order-date {
+  font-size: 0.8rem;
+  color: #adb5bd;
+}
+
+.status-badge {
+  padding: 0.25em 0.6em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 999px;
+  text-align: center;
+}
+
+.status-delivered {
+  background-color: #e9f5ec;
+  color: #28a745;
+}
+
+.status-canceled {
+  background-color: #fbe9e7;
+  color: #dc3545;
+}
+
+.status-pending {
+  background-color: #fff8e1;
+  color: #ffc107;
+}
