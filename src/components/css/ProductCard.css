@@ -1,0 +1,71 @@
+.product-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.product-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.product-info {
+  flex-grow: 1;
+}
+
+.product-name {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.product-price {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.product-view-button {
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  color: #343a40;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.product-view-button:hover {
+  background-color: #f8f9fa;
+}
+
+/* Recommendation Card for sidebar */
+.recommendation-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.recommendation-image {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.recommendation-details {
+  flex-grow: 1;
+}
+
+.recommendation-name {
+  font-weight: 500;
+}
+
+.recommendation-price {
+  font-weight: 600;
+  color: #343a40;
+}
