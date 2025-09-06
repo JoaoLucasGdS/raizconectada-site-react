@@ -1,25 +1,24 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 .DivHomePageVideo {
-  position: fixed;
-  inset: 0;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
   z-index: -1;
-  pointer-events: none;
-  background: black;
 }
 
 .DivHomePageVideo video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
 }
 
-.no-scroll {
-  overflow: hidden;
-  /* ensure mobile doesn't treat body as larger than viewport */
-  height: 100vh;
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000099; 
 }

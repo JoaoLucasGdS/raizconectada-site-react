@@ -1,0 +1,34 @@
+footer {
+    background-color: #0f3219;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.ul-footer {
+    display: flex;
+    align-items: center; 
+    gap: 3em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ul-footer a {
+    color: rgb(151, 151, 151); 
+    text-decoration: none;
+    transition: .5s;
+    font-size: 1.5em;
+}
+
+.ul-footer a:hover {
+    color: rgb(247, 247, 247);
+    font-size: 2em;
+}
+
+.h1-footer a {
+    font-weight: bold; 
+}

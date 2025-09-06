@@ -1,0 +1,179 @@
+:root {
+    --primary-text-color: #fff;
+    --secondary-text-color: #f0f0f0;
+    /* --form-bg-color is no longer needed as the form will be transparent */
+    --input-bg-color: #fff;
+    --border-color: #555; /* Darkened for better contrast */
+    --focus-border-color: #6c757d;
+    --button-bg-color: #343a40;
+    --button-hover-bg-color: #495057;
+    --error-color: #ff8a8a; /* Brightened for dark background */
+    --overlay-color: rgba(0, 0, 0, 0.65); /* Slightly adjusted opacity */
+}
+
+.letter-first {
+    position: relative;
+    width: 100%;
+    padding: 6rem 2rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+/* This is now the main container for the connected element */
+.first-text {
+    position: relative; /* Establishes a positioning context for the ::before */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem; /* Controls the space BETWEEN the text and form */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2.5rem; /* Controls the space INSIDE the overlay border */
+    border-radius: 12px; /* Rounds the corners of the entire block */
+    isolation: isolate; /* Creates a new stacking context */
+}
+
+/* This pseudo-element creates the single, unified dark background */
+.first-text::before {
+    content: '';
+    position: absolute;
+    inset: 0; /* Shorthand for top: 0, right: 0, bottom: 0, left: 0 */
+    background-color: var(--overlay-color);
+    border-radius: inherit; /* Takes the border-radius from .first-text */
+    z-index: -1; /* Places the background behind the content */
+}
+
+.form-intro-text {
+    flex: 1 1 50%;
+    min-width: 300px;
+    color: var(--primary-text-color);
+}
+
+.second-h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.form-intro-text p {
+    font-size: 1.25rem;
+    margin-top: 0;
+    font-weight: 300;
+    color: var(--secondary-text-color);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.form-container {
+    /* The form itself is now transparent to show the unified background */
+    background-color: transparent;
+    padding: 0; /* Padding is handled by the parent .first-text */
+    box-shadow: none; /* Shadow is not needed */
+    max-width: 420px;
+    width: 100%;
+    flex: 1 1 40%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Label color must be light to be visible on the dark background */
+.form-container label {
+    font-size: 1rem;
+    color: var(--primary-text-color);
+    font-weight: 600;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    color: #333;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+    border-color: var(--focus-border-color);
+    box-shadow: 0 0 0 3px rgba(108, 117, 125, 0.25);
+    outline: none;
+}
+
+.form-container textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-container button {
+    background-color: var(--button-bg-color);
+    color: var(--primary-text-color);
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 1rem;
+}
+
+.form-container button:hover {
+    background-color: var(--button-hover-bg-color);
+    transform: translateY(-2px);
+}
+
+.error-message {
+    color: var(--error-color);
+    font-size: 0.875rem;
+}
+
+/* Media queries remain the same */
+@media (max-width: 992px) {
+    .second-h1 {
+        font-size: 3rem;
+    }
+    .form-intro-text p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .letter-first {
+        padding: 4rem 1.5rem;
+    }
+    .first-text {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .letter-first {
+        padding: 3rem 1rem;
+    }
+    .second-h1 {
+        font-size: 2.5rem;
+    }
+    .first-text {
+        padding: 1.5rem;
+    }
+}
