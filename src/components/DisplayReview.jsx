@@ -1,15 +1,19 @@
 import PropTypes from 'prop-types';
+import { useTranslation } from "react-i18next";
 
 import OtherProducts from './OtherProducts';
 
 import sampleProducts from '../data/sampleProducts';
 
 function DisplayReview({ review }) {
+
+   const { t } = useTranslation();
+
   if (!review) {
     return (
       <div className="p-3 border rounded">
-        <h3>Clique em um vendedor</h3>
-        <p>Clique em um vendendor na barra lateral para ver os detalhes aqui.</p>
+        <h3>{t("reviews.clickSeller")}</h3>
+        <p>{t("reviews.clickSellerDetails")}</p>
       </div>
     );
   }

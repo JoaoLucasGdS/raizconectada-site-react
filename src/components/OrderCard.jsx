@@ -1,13 +1,17 @@
 import PropTypes from 'prop-types';
+import { useTranslation } from "react-i18next";
+
 import './css/OrderCard.css';
 
 const statusMap = {
-  delivered: { text: 'Entregue', className: 'status-delivered' },
-  canceled: { text: 'Cancelado', className: 'status-canceled' },
-  pending: { text: 'Pendente', className: 'status-pending' },
+  delivered: { key: 'delivered', className: 'status-delivered' },
+  canceled: { key: 'canceled', className: 'status-canceled' },
+  pending: { key: 'pending', className: 'status-pending' },
 };
 
 function OrderCard({ order }) {
+  const { t } = useTranslation();
+
   const { id, items, date, status, image } = order;
   const statusInfo = statusMap[status] || {};
 
@@ -15,13 +19,15 @@ function OrderCard({ order }) {
     <div className="order-card">
       <img src={image} alt={items.join(', ')} className="order-image" />
       <div className="order-details">
-        <div className="order-id">Pedido #{id}</div>
-        <div className="order-items">{items.join(', ')}</div>
+        <div className="order-id">{t("orders.orderId", { id })}</div>
+        <div className="order-items">
+          {items.map(item => t(`cart.${item}`)).join(", ")}
+        </div>
         <div className="order-date">{date}</div>
       </div>
       <div className="order-status">
         <span className={`status-badge ${statusInfo.className}`}>
-          {statusInfo.text}
+          {t(`orders.status.${statusInfo.key}`)}
         </span>
       </div>
     </div>

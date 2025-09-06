@@ -1,0 +1,80 @@
+{
+  "home": {
+    "subtitle": "TU CULTIVO, NUESTRA CONEXIÓN",
+    "title": "RAÍZ<br/>CONECTADA",
+    "contactButton": "Contáctanos"
+  },
+  "reviewsPage": {
+    "reviewTitle": "PRODUCTOS Y COMERCIANTES",
+    "otherProducts": "PRODUCTOS SIMILARES"
+  },
+  "cart": {
+    "banana": "Banana",
+    "grape": "Uva",
+    "orange": "Naranja",
+    "watermelon": "Sandía",
+    "farmerX": "Agricultor X",
+    "farmerY": "Agricultor Y",
+    "farmerZ": "Agricultor Z",
+    "price": "Precio",
+    "quantity": "Cantidad",
+    "total": "Total",
+    "subtotal": "Subtotal",
+    "delivery": "Entrega",
+    "buy": "Comprar"
+  },
+  "profileTabs": {
+    "orders": "Mis pedidos",
+    "products": "Mis productos"
+  },
+  "orders": {
+    "orderId": "Pedido #{{id}}",
+    "status": {
+      "delivered": "Entregado",
+      "canceled": "Cancelado",
+      "pending": "Pendiente"
+    }
+  },
+  "form": {
+    "intro": {
+      "title": "CONTÁCTANOS",
+      "subtitle": "Para nosotros, tu opinión es un pilar."
+    },
+    "labels": {
+      "nome": "Nombre completo:",
+      "email": "Correo electrónico:",
+      "mensagem": "Déjanos un mensaje:"
+    },
+    "placeholders": {
+      "nome": "Tu nombre completo",
+      "email": "tu.correo@ejemplo.com",
+      "mensagem": "Tu mensaje..."
+    },
+    "errors": {
+      "nomeBlank": "El campo Nombre Completo no puede estar vacío.",
+      "nomeIncomplete": "Por favor, ingresa tu nombre y apellido.",
+      "emailBlank": "El campo correo electrónico no puede estar vacío.",
+      "emailInvalid": "Por favor, ingresa un formato de correo válido.",
+      "mensagemBlank": "El mensaje no puede estar vacío.",
+      "mensagemShort": "El mensaje debe tener al menos {{charsLeft}} caracteres."
+    },
+    "submit": "Enviar",
+    "success": "Gracias por tu mensaje,"
+  },
+  "reviews": {
+    "clickSeller": "Haz clic en un vendedor",
+    "clickSellerDetails": "Haz clic en un vendedor en la barra lateral para ver los detalles aquí.",
+    "verified": "Verificado"
+  },
+  "activities": {
+    "activities": "Actividades"
+  },
+  "header": {
+    "locate": "Ubicar",
+    "reviews": "Reseñas",
+    "cart": "Carrito"
+  },
+  "footer": {
+    "aboutus": "Quiénes somos"
+  }
+}

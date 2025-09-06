@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from "react-i18next";
 import SidebarReviews from "../components/SidebarReviews";
 import DisplayReview from "../components/DisplayReview";
 import OtherProducts from '../components/OtherProducts';
@@ -10,6 +11,8 @@ import sampleProducts from "../data/sampleProducts"
 
 function ReviewsPage() {
 
+  const { t } = useTranslation();
+
   const [selectedId, setSelectedId] = useState(null);
 
   const selectedReview = mockReviews.find(review => review.id === selectedId);
@@ -17,7 +20,7 @@ function ReviewsPage() {
   return (
     <div className="container-fluid mt-4">
       
-      <p className="titleReviewsPage">PRODUTOS E MERCADORES</p>
+      <p className="titleReviewsPage">{t("reviewsPage.reviewTitle")}</p>
 
       <div className="row">
 
@@ -30,7 +33,7 @@ function ReviewsPage() {
           {selectedReview && (
             <div className="text-center">
               <hr className="my-4" />
-              <h4>PRODUTOS SEMELHANTES</h4>
+              <h4>{t("reviewsPage.otherProducts")}</h4>
               <OtherProducts 
                 products={sampleProducts} 
                 visible={4} 

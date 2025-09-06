@@ -1,0 +1,81 @@
+{
+  "home": {
+    "subtitle": "SEU CULTIVO, NOSSA CONEXÃO",
+    "title": "RAIZ<br/>CONECTADA",
+    "contactButton": "Fale Conosco"
+  },
+  "reviewsPage": {
+    "reviewTitle": "PRODUTOS E MERCADORES",
+    "otherProducts": "PRODUTOS SEMELHANTES"
+  },
+  "cart": {
+    "banana": "Banana",
+    "grape": "Uva",
+    "orange": "Laranja",
+    "watermelon": "Melancia",
+    "farmerX": "Agricultor X",
+    "farmerY": "Agricultor Y",
+    "farmerZ": "Agricultor Z",
+    "price": "Preço",
+    "quantity": "Quantidade",
+    "total": "Total",
+    "subtotal": "Subtotal",
+    "delivery": "Entrega",
+    "buy": "Comprar"
+  },
+  "profileTabs": {
+    "orders": "Meus pedidos",
+    "products": "Meus produtos"
+  },
+  "orders": {
+    "orderId": "Pedido #{{id}}",
+    "status": {
+      "delivered": "Entregue",
+      "canceled": "Cancelado",
+      "pending": "Pendente"
+    }
+  },
+  "form": {
+    "intro": {
+      "title": "FALE CONOSCO",
+      "subtitle": "Para nós, sua opinião é um pilar."
+    },
+    "labels": {
+      "nome": "Nome completo:",
+      "email": "E-mail:",
+      "mensagem": "Deixe-nos uma mensagem:"
+    },
+    "placeholders": {
+      "nome": "Seu nome completo",
+      "email": "seu.email@exemplo.com",
+      "mensagem": "Sua mensagem..."
+    },
+    "errors": {
+      "nomeBlank": "O campo Nome Completo não pode ser em branco.",
+      "nomeIncomplete": "Por favor, insira seu nome e sobrenome.",
+      "emailBlank": "O campo e-mail não pode ser em branco.",
+      "emailInvalid": "Por favor, insira um formato de e-mail válido.",
+      "mensagemBlank": "A mensagem não pode ser em branco.",
+      "mensagemShort": "A mensagem deve ter ao menos {{charsLeft}} caracteres."
+    },
+    "submit": "Enviar",
+    "success": "Obrigado por sua mensagem,"
+  },
+  "reviews": {
+    "clickSeller": "Clique em um vendedor",
+    "clickSellerDetails": "Clique em um vendedor na barra lateral para ver os detalhes aqui.",
+    "verified": "Verificado"
+  },
+  "activities": {
+    "activities": "Atividades"
+  },
+  "header": {
+    "locate": "Localizar",
+    "reviews": "Avaliações",
+    "cart": "Carrinho"
+  },
+  "footer": {
+    "aboutus": "Quem somos"
+  }
+  
+}

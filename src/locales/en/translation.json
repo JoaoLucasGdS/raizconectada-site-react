@@ -1,0 +1,80 @@
+{
+  "home": {
+    "subtitle": "YOUR CULTIVATION, OUR CONNECTION",
+    "title": "CONNECTED<br/>ROOT",
+    "contactButton": "Contact Us"
+  },
+  "reviewsPage": {
+    "reviewTitle": "PRODUCTS AND MERCHANTS",
+    "otherProducts": "SIMILAR PRODUCTS"
+  },
+  "cart": {
+    "banana": "Banana",
+    "grape": "Grape",
+    "orange": "Orange",
+    "watermelon": "Watermelon",
+    "farmerX": "Farmer X",
+    "farmerY": "Farmer Y",
+    "farmerZ": "Farmer Z",
+    "price": "Price",
+    "quantity": "Quantity",
+    "total": "Total",
+    "subtotal": "Subtotal",
+    "delivery": "Delivery",
+    "buy": "Buy"
+  },
+  "profileTabs": {
+    "orders": "My Orders",
+    "products": "My Products"
+  },
+  "orders": {
+    "orderId": "Order #{{id}}",
+    "status": {
+      "delivered": "Delivered",
+      "canceled": "Canceled",
+      "pending": "Pending"
+    }
+  },
+  "form": {
+    "intro": {
+      "title": "CONTACT US",
+      "subtitle": "For us, your opinion is a cornerstone."
+    },
+    "labels": {
+      "nome": "Full Name:",
+      "email": "Email:",
+      "mensagem": "Leave us a message:"
+    },
+    "placeholders": {
+      "nome": "Your full name",
+      "email": "your.email@example.com",
+      "mensagem": "Your message..."
+    },
+    "errors": {
+      "nomeBlank": "Full Name cannot be blank.",
+      "nomeIncomplete": "Please enter your first and last name.",
+      "emailBlank": "Email cannot be blank.",
+      "emailInvalid": "Please enter a valid email format.",
+      "mensagemBlank": "Message cannot be blank.",
+      "mensagemShort": "Message must be at least {{charsLeft}} characters."
+    },
+    "submit": "Send",
+    "success": "Thank you for your message,"
+  },
+  "reviews": {
+    "clickSeller": "Click a seller",
+    "clickSellerDetails": "Click a seller in the sidebar to see the details here.",
+    "verified": "Verified"
+  },
+  "activities": {
+    "activities": "Activities"
+  },
+  "header": {
+    "locate": "Locate",
+    "reviews": "Reviews",
+    "cart": "Cart"
+  },
+  "footer": {
+    "aboutus": "About Us"
+  }
+}
