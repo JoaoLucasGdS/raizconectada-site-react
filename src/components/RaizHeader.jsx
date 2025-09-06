@@ -42,15 +42,6 @@ function RaizHeader({ transparent = false }) {
             </NavLink>
           </li>
 
-          <li className="nav-item">
-            <NavLink
-              to="/form"
-              className={({ isActive }) => `nav-link ${isActive ? "text-success" : ""}`}
-            >
-              <i className="bi bi-chat-dots fs-3" /> Fale Conosco
-            </NavLink>
-          </li>
-
         </ul>
 
         <ul className="navbar-nav">
