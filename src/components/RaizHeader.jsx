@@ -1,8 +1,11 @@
 import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import "./css/RaizHeader.css";
 import Logo from "../assets/logo.png";
 
 function RaizHeader({ transparent = false }) {
+
+  const { t } = useTranslation();
 
   const rootClass = `navbar navbar-expand-lg navbar-dark custom-navbar ${transparent ? "custom-navbar--transparent" : ""}`;
 
@@ -20,7 +23,7 @@ function RaizHeader({ transparent = false }) {
               to="/gps"
               className={({ isActive }) => `nav-link ${isActive ? "text-success" : ""}`}
             >
-              <i className="bi bi-geo-alt fs-3" /> Localizar
+              <i className="bi bi-geo-alt fs-3" /> {t("header.locate")}
             </NavLink>
           </li>
 
@@ -29,7 +32,7 @@ function RaizHeader({ transparent = false }) {
               to="/reviews"
               className={({ isActive }) => `nav-link ${isActive ? "text-success" : ""}`}
             >
-              <i className="bi bi-star fs-3" /> Avaliações
+              <i className="bi bi-star fs-3" /> {t("header.reviews")}
             </NavLink>
           </li>
 
@@ -38,7 +41,7 @@ function RaizHeader({ transparent = false }) {
               to="/cart"
               className={({ isActive }) => `nav-link ${isActive ? "text-success" : ""}`}
             >
-              <i className="bi bi-cart fs-3" /> Carrinho
+              <i className="bi bi-cart fs-3" /> {t("header.cart")}
             </NavLink>
           </li>
 
