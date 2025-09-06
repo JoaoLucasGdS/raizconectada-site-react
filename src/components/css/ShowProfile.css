@@ -1,0 +1,16 @@
+.profile-picture {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+}
+
+.unverified-user {
+    opacity: 0.1;
+    cursor: not-allowed;
+}
+
+/*User email and number*/
+ul.list-unstyled li{
+  margin-bottom: 2px;
+  font-size: 1.2rem;
+}
