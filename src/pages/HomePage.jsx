@@ -10,6 +10,11 @@ function HomePage() {
 
   const formsSectionRef = useRef(null);
 
+  const handleYouTubeClick = () => {
+    const youtubeUrl = "https://www.youtube.com"; 
+    window.open(youtubeUrl, "_blank", "noopener,noreferrer");
+  };
+
   const handleScrollToForms = () => {
     formsSectionRef.current?.scrollIntoView({ behavior: "smooth" });
   };
@@ -27,13 +32,23 @@ function HomePage() {
         {/*Works as a separator for the video and the forms/footer */}
         <main className="flex-grow-1 hero-section">
 
-          <button
-            onClick={handleScrollToForms}
-            className="scroll-to-forms-button"
-          >
-            <i className="bi bi-chat-dots fs-3" /> Fale Conosco
-          </button>
+          <div className="hero-buttons-container">
 
+            <button
+              onClick={handleYouTubeClick}
+              className="youtube-button"
+            >
+              <i className="bi bi-youtube fs-3" />
+            </button>
+
+            <button
+              onClick={handleScrollToForms}
+              className="scroll-to-forms-button"
+            >
+              <i className="bi bi-chat-dots fs-3" /> Fale Conosco
+            </button>
+
+          </div>
         </main>
         <div ref={formsSectionRef} />
         
