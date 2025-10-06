@@ -9,6 +9,7 @@ import ProfilePage from "./pages/ProfilePage";
 import RootLayout from "./components/RootLayout";
 
 import "./index.css"
+import RecipesPage from "./pages/RecipesPage";
 
 const router = createBrowserRouter([{
 
@@ -19,6 +20,10 @@ const router = createBrowserRouter([{
       {
         index: true,
         element: <HomePage />,
+      },
+      {
+        path: "recipes",
+        element: <RecipesPage />,
       },
       {
         path: "gps",
