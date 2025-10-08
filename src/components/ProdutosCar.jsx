@@ -20,7 +20,7 @@ export default function Cart() {
       agricultor: "farmerX", // chave -> t('cart.farmerX')
       preco: 5,
       quantidade: 1,
-      img: "public/products/p1.jpg",
+      img: "/products/p1.jpg",
     },
     {
       id: 2,
@@ -28,7 +28,7 @@ export default function Cart() {
       agricultor: "farmerY",
       preco: 5,
       quantidade: 1,
-      img: "public/products/p10.jpg",
+      img: "/products/p10.jpg",
     },
     {
       id: 3,
@@ -36,7 +36,7 @@ export default function Cart() {
       agricultor: "farmerZ",
       preco: 5,
       quantidade: 1,
-      img: "public/products/p4.jpg",
+      img: "/products/p4.jpg",
     },
   ];
 
