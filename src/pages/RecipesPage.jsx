@@ -1,6 +1,13 @@
+import ExpandableRecipesList from "../components/ExpandableRecipesList";
+
+import mockRecipes from "../data/mockRecipes";
+
 function RecipesPage() {
+
+    const initialItems =  mockRecipes;
+
     return(
-        <p>RECEITAS</p>
+        <ExpandableRecipesList initialItems={initialItems} />
     )
 }
 
