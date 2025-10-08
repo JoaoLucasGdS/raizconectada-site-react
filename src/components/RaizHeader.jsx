@@ -20,6 +20,15 @@ function RaizHeader({ transparent = false }) {
 
           <li className="nav-item">
             <NavLink
+              to="/recipes"
+              className={({ isActive }) => `nav-link ${isActive ? "text-success" : ""}`}
+            >
+              <i className="bi bi-fork-knife fs-3" /> {t("header.recipes")}
+            </NavLink>
+          </li>
+
+          <li className="nav-item">
+            <NavLink
               to="/gps"
               className={({ isActive }) => `nav-link ${isActive ? "text-success" : ""}`}
             >
