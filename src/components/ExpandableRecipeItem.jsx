@@ -52,11 +52,11 @@ export function ExpandableRecipeItem({ item, idx, openIndex, toggle, svgFallback
             </div>
 
             <div className="col-md-8">
-              <h5>Quick details</h5>
+              <h5>Detalhes</h5>
               <p>{item.description}</p>
               <div className="d-flex gap-2">
                 <a className="btn btn-sm btn-view-recipe" href={item.link} target="_blank" rel="noreferrer">
-                  View recipe site
+                  Abrir site da receita
                 </a>
               </div>
             </div>
