@@ -1,0 +1,66 @@
+.accordion-button {
+  background-color: transparent;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.accordion-button:hover {
+  background-color: #c7f5de;
+  z-index: 2;
+}
+
+.accordion-button:not(.collapsed),
+.accordion-button:active {
+  background-color: #e9ecef;
+  box-shadow: none;
+  color: #212529;
+}
+
+.btn-view-recipe {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+}
+
+.btn-view-recipe:hover {
+  background-color: #27ae60;
+  color: white;
+}
+
+.recipe-thumb-img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.recipe-detail-img {
+  max-height: 220px;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+#recipesAccordion .accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(46, 204, 113, 0.25);
+  border-color: transparent;
+  /* removing the default background and text color changes on focus because it doenst follow the website green design, its an ugly blue */
+  background-color: transparent;
+  color: inherit;
+}
+
+/* This ensures that an open item doesn't lose its background color when focused */
+#recipesAccordion .accordion-button:not(.collapsed):focus {
+    background-color: #e9ecef;
+}
+
+#recipesAccordion .btn-view-recipe {
+  background-color: #0f3219;
+  color: white;
+  border: none;
+}
+
+#recipesAccordion .btn-view-recipe:hover {
+  background-color: #27ae60;
+  color: white;
+}
