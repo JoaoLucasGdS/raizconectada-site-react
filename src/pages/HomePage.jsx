@@ -15,7 +15,7 @@ function HomePage() {
   const formsSectionRef = useRef(null);
 
   const handleYouTubeClick = () => {
-    const youtubeUrl = "https://www.youtube.com/watch?v=ZStLlgwL1ws"; 
+    const youtubeUrl = "https://youtu.be/HlZWfjKgCtQ"; 
     window.open(youtubeUrl, "_blank", "noopener,noreferrer");
   };
 
