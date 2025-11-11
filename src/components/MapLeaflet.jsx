@@ -10,7 +10,7 @@ L.Icon.Default.mergeOptions({
   shadowUrl:        new URL("leaflet/dist/images/marker-shadow.png", import.meta.url).href,
 });
 
-export default function MapLeaflet({ center = [-23.55052, -46.633308], zoom = 13, markerText = "Você está aqui" }) {
+export default function MapLeaflet({ center, zoom, markerText}) {
   return (
     <div style={{ height: "90vh", width: "100%" }}>
       <MapContainer center={center} zoom={zoom} style={{ height: "100%", width: "100%" }}>
