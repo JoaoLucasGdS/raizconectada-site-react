@@ -1,0 +1,78 @@
+.custom-user-marker .leaflet-marker-icon {
+  background: transparent;
+  border: none;
+}
+
+.user-marker-bubble {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  background: #fff;
+  border-radius: 50%;
+  border: 2px solid #0a3314;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.user-marker-pfp {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-marker-stars {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2px);
+  border-radius: 4px;
+  padding: 0 4px;
+  font-size: 12px;
+  color: #f0ad4e;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.user-tooltip-card {
+  max-width: 600x;
+}
+.user-tooltip-card strong {
+  color: #0a3314;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.user-tooltip-card p {
+  font-size: 0.9em;
+  margin: 4px 0 0 0;
+  white-space: normal;
+}
+.user-tooltip-snippet {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.btn-see-review {
+  background-color: #0a3314;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 0.9em;
+  font-weight: 600;
+  width: 100%;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-see-review:hover {
+  background-color: #1a5c2d;
+}

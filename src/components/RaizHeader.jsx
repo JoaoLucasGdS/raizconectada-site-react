@@ -38,7 +38,7 @@ function RaizHeader({ transparent = false }) {
 
           <li className="nav-item">
             <NavLink
-              to="/reviews"
+              to="/reviews/0"
               className={({ isActive }) => `nav-link ${isActive ? "text-success" : ""}`}
             >
               <i className="bi bi-star fs-3" /> {t("header.reviews")}

@@ -30,7 +30,7 @@ const router = createBrowserRouter([{
         element: <GpsPage />,
       },
       {
-        path: "reviews",
+        path: "reviews/:id",
         element: <ReviewsPage />,
       },
       {
