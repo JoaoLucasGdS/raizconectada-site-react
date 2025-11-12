@@ -8,6 +8,9 @@
     "reviewTitle": "PRODUTOS E MERCADORES",
     "otherProducts": "PRODUTOS SEMELHANTES"
   },
+  "gpsPage": {
+    "OpenReviewButtonText": "Ver Avaliações"
+  },
   "cart": {
     "banana": "Banana",
     "grape": "Uva",

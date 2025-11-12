@@ -8,6 +8,9 @@
     "reviewTitle": "商品と販売者",
     "otherProducts": "類似商品"
   },
+  "gpsPage": {
+    "OpenReviewButtonText": "レビューを見る"
+  },
   "cart": {
     "banana": "バナナ",
     "grape": "ぶどう",

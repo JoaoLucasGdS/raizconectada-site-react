@@ -1,31 +1,39 @@
-import { useState } from 'react';
 import { useTranslation } from "react-i18next";
+import { useParams, useNavigate } from "react-router-dom"; // Importe os hooks do router
 import SidebarReviews from "../components/SidebarReviews";
 import DisplayReview from "../components/DisplayReview";
 import OtherProducts from '../components/OtherProducts';
 
-import "./css/ReviewsPage.css"
+import "./css/ReviewsPage.css";
 
 import mockReviews from "../data/mockReviews";
-import sampleProducts from "../data/sampleProducts"
+import sampleProducts from "../data/sampleProducts";
 
 function ReviewsPage() {
 
   const { t } = useTranslation();
+  
+  const { id } = useParams();
+  
+  const navigate = useNavigate();
 
-  const [selectedId, setSelectedId] = useState(null);
+  const selectedId = id ? Number(id) : null;
 
   const selectedReview = mockReviews.find(review => review.id === selectedId);
 
+  const handleSelect = (newId) => {
+    navigate(`/reviews/${newId}`);
+  };
+
   return (
     <div className="container-fluid mt-4">
-      
+        
       <p className="titleReviewsPage">{t("reviewsPage.reviewTitle")}</p>
 
       <div className="row">
 
         <div className="col-md-8">
-
+          
           <DisplayReview review={selectedReview} />
 
           <hr className="my-4" />
@@ -48,7 +56,7 @@ function ReviewsPage() {
           <SidebarReviews
             reviews={mockReviews}
             selectedId={selectedId}
-            onSelect={setSelectedId}
+            onSelect={handleSelect}
           />
         </div>
 

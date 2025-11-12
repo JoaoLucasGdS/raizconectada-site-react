@@ -6,6 +6,7 @@ const mockReviews = [
     snippet: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     rating: 5,
     isVerified: true,
+    location: [-22.9099, -47.0626], // Campinas
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ const mockReviews = [
     snippet: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     rating: 4,
     isVerified: false,
+    location: [-23.5225, -46.8407], // Osasco region
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ const mockReviews = [
     snippet: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     rating: 5,
     isVerified: true,
+    location: [-23.6818, -46.6200], // Near Diadema
   },
   {
     id: 4,
@@ -30,6 +33,7 @@ const mockReviews = [
     snippet: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     rating: 5,
     isVerified: true,
+    location: [-23.1967, -46.8840], // Jundiaí
   },
   {
     id: 5,
@@ -38,6 +42,7 @@ const mockReviews = [
     snippet: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     rating: 4,
     isVerified: false,
+    location: [-22.8200, -47.2660], // Hortolândia
   },
   {
     id: 6,
@@ -46,6 +51,7 @@ const mockReviews = [
     snippet: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     rating: 5,
     isVerified: true,
+    location: [-24.0118, -46.4253], // Itanhaém coast
   },
   {
     id: 7,
@@ -54,6 +60,7 @@ const mockReviews = [
     snippet: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     rating: 3,
     isVerified: false,
+    location: [-23.9703, -46.3380], // Praia Grande
   },
   {
     id: 8,
@@ -62,6 +69,7 @@ const mockReviews = [
     snippet: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     rating: 5,
     isVerified: true,
+    location: [-22.4326, -46.9578], // Bragança Paulista
   },
   {
     id: 9,
@@ -70,6 +78,7 @@ const mockReviews = [
     snippet: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     rating: 4,
     isVerified: true,
+    location: [-23.9668, -47.4529], // Sorocaba
   },
   {
     id: 10,
@@ -78,6 +87,7 @@ const mockReviews = [
     snippet: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     rating: 3,
     isVerified: false,
+    location: [-22.3153, -48.5710], // Jaú area
   },
   {
     id: 11,
@@ -86,6 +96,7 @@ const mockReviews = [
     snippet: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     rating: 5,
     isVerified: true,
+    location: [-21.9850, -47.8782], // Araraquara
   },
   {
     id: 12,
@@ -94,6 +105,7 @@ const mockReviews = [
     snippet: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     rating: 4,
     isVerified: false,
+    location: [-20.8200, -49.3797], // São José do Rio Preto
   },
   {
     id: 13,
@@ -102,6 +114,7 @@ const mockReviews = [
     snippet: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     rating: 5,
     isVerified: true,
+    location: [-23.0896, -47.2181], // Indaiatuba
   },
   {
     id: 14,
@@ -110,6 +123,7 @@ const mockReviews = [
     snippet: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     rating: 4,
     isVerified: false,
+    location: [-22.5037, -48.5617], // Botucatu
   },
   {
     id: 15,
@@ -118,6 +132,7 @@ const mockReviews = [
     snippet: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     rating: 5,
     isVerified: true,
+    location: [-21.2070, -47.8103], // Ribeirão Preto
   },
 ];
 
