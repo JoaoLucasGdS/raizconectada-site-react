@@ -8,6 +8,9 @@
     "reviewTitle": "PRODUCTS AND MERCHANTS",
     "otherProducts": "SIMILAR PRODUCTS"
   },
+  "gpsPage": {
+    "OpenReviewButtonText": "View Reviews"
+  },
   "cart": {
     "banana": "Banana",
     "grape": "Grape",

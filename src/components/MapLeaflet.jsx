@@ -3,6 +3,7 @@ import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import PropTypes from 'prop-types';
 import { useNavigate } from "react-router-dom"; 
+import { useTranslation } from "react-i18next";
 
 import "./css/MapLeaflet.css";
 
@@ -38,19 +39,22 @@ const createUserIcon = (user) => {
   });
 };
 
-const UserPopupContent = ({ user, onNavigate }) => (
-  <div className="user-tooltip-card"> 
-    <strong>
-      {user.name} 
-      {user.isVerified && <i className="bi bi-patch-check-fill text-primary" title="Verified"></i>}
-    </strong>
-    <p className="user-tooltip-snippet">{user.snippet}</p>
-    
-    <button className="btn-see-review" onClick={onNavigate}>
-      Ver Avaliações
-    </button>
-  </div>
-);
+const UserPopupContent = ({ user, onNavigate }) => {
+  const { t } = useTranslation();
+  return (
+    <div className="user-tooltip-card"> 
+      <strong>
+        {user.name} 
+        {user.isVerified && <i className="bi bi-patch-check-fill text-primary" title={t('reviews.verified')}></i>}
+      </strong>
+      <p className="user-tooltip-snippet">{user.snippet}</p>
+      
+      <button className="btn-see-review" onClick={onNavigate}>
+      {t('gpsPage.OpenReviewButtonText')}
+      </button>
+    </div>
+  );
+};
 
 UserPopupContent.propTypes = {
     user: PropTypes.object.isRequired,
